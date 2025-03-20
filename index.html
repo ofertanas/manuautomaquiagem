@@ -66,6 +66,47 @@
             width: 100%;
             height: 100%;
         }
+        .price {
+            background: #ffe5ec;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .price-box {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: red;
+            font-size: 18px;
+        }
+        .new-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d63384;
+        }
+        .installments {
+            font-size: 16px;
+            color: #333;
+        }
+        .benefits {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .benefit-item img {
+            width: 50px;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -74,44 +115,57 @@
         <h1>Transforme seu rosto com a maquiagem certa! 💄✨</h1>
         <p>Aprenda a se maquiar de forma simples e prática, mesmo que nunca tenha pegado em um pincel antes!</p>
 
-        <!-- VÍDEO DE UGC (DEPOIMENTO OU EXPERIÊNCIA DE ALUNA) -->
+        <!-- VÍDEO DE UGC -->
         <div class="video-container">
-            <!-- Substitua pelo link do vídeo do cliente -->
             <iframe src="https://www.youtube.com/embed/SEU_VIDEO_UGC_AQUI" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <a href="#cadastro" class="cta-button">Quero me transformar agora!</a>
+        <!-- SEÇÃO DE PREÇO -->
+        <div class="section price">
+            <h2>Quanto custa para aprender a se maquiar de forma impecável?</h2>
+            <p>Você poderia gastar <strong>R$250,00</strong> em um único dia no salão...<br>Ou até <strong>R$500,00</strong> em um curso presencial...</p>
+            <p><strong>Mas hoje você pode aprender tudo isso por um valor muito menor!</strong></p>
 
-        <div class="section">
-            <h2>Você tem dificuldade em se maquiar?</h2>
-            <p>❌ Não sabe por onde começar e sempre acha que errou?</p>
-            <p>❌ Acha que maquiagem bonita é só para profissionais?</p>
-            <p>❌ Gasta dinheiro com produtos e não consegue um bom resultado?</p>
-            <p>💖 Então esse curso é para você!</p>
+            <div class="price-box">
+                <p class="old-price">De: <span>R$97,00</span></p>
+                <p class="new-price">Por apenas: <strong>R$10,00</strong></p>
+                <p class="installments">Ou em até <strong>2x de R$5,00</strong> no cartão</p>
+            </div>
+
+            <p>💳 Aceitamos PIX, Boleto e Cartão de Crédito!</p>
+
+            <a href="#cadastro" class="cta-button">Quero garantir meu acesso agora!</a>
+
+            <p class="guarantee">🛡️ Garantia de 7 dias: Se não gostar, devolvemos seu dinheiro!</p>
         </div>
 
-        <div class="section">
-            <h2>O que você vai aprender?</h2>
-            <ul>
-                <li>✔ Preparação da pele</li>
-                <li>✔ Correção de imperfeições</li>
-                <li>✔ Olhos marcantes</li>
-                <li>✔ Contorno e iluminação</li>
-                <li>✔ Escolha dos produtos certos</li>
-                <li>✔ Dicas para make do dia a dia e festas</li>
-            </ul>
-        </div>
+        <div class="section benefits">
+            <h2>📌 Por que esse curso é perfeito para você?</h2>
 
-        <div class="section">
-            <h2>Bônus Exclusivo 🎁</h2>
-            <p>📖 Ebook com mais dicas incríveis de maquiagem!</p>
-            <p>🚀 Garantia de 7 dias – ou seu dinheiro de volta!</p>
+            <div class="benefit-item">
+                <img src="img/icon-facil.png" alt="Ícone de facilidade">
+                <h3>Fácil de Aprender</h3>
+                <p>Aulas simples e diretas, feitas para quem nunca se maquiou antes.</p>
+            </div>
+
+            <div class="benefit-item">
+                <img src="img/icon-online.png" alt="Ícone online">
+                <h3>100% Online</h3>
+                <p>Estude no seu tempo e de onde quiser. Você tem acesso vitalício!</p>
+            </div>
+
+            <div class="benefit-item">
+                <img src="img/icon-profissional.png" alt="Ícone maquiagem profissional">
+                <h3>Resultado Profissional</h3>
+                <p>Aprenda técnicas que vão deixar sua make impecável, sem gastar com salão!</p>
+            </div>
+
+            <a href="#cadastro" class="cta-button">Quero aprender agora!</a>
         </div>
 
         <div class="section">
             <h2>Veja como funciona o curso!</h2>
             <div class="video-container">
-                <!-- Substitua pelo link do vídeo do curso -->
                 <iframe src="https://www.youtube.com/embed/SEU_VIDEO_CURSO_AQUI" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
@@ -120,23 +174,18 @@
             <h2>O que nossas alunas estão dizendo! 💬</h2>
             <p>"Eu nunca soube me maquiar, mas esse curso mudou tudo! Hoje faço makes lindas sozinha!" – Ana Souza</p>
             <p>"Parece que eu saí do salão! Amei as técnicas, são muito fáceis!" – Camila Ferreira</p>
-            <p>"Valeu cada centavo! Curso maravilhoso e muito prático!" – Juliana Lima</p>
             <img src="img/depoimento1.jpg" alt="Depoimento de cliente">
             <img src="img/depoimento2.jpg" alt="Antes e depois">
         </div>
 
         <div class="section ugcs">
             <h2>Transformações das nossas alunas! ✨</h2>
-            <p>Veja algumas das alunas que já aprenderam a se maquiar sozinhas!</p>
             <img src="img/antesdepois1.jpg" alt="Antes e depois 1">
             <img src="img/antesdepois2.jpg" alt="Antes e depois 2">
         </div>
 
         <div class="section">
             <h2>Garanta sua vaga agora mesmo!</h2>
-            <p>🎯 Acesso imediato após a confirmação do pagamento!</p>
-            <p>🎯 Aprenda a realçar sua beleza sem depender de ninguém!</p>
-
             <a href="#cadastro" class="cta-button">Sim, eu quero me transformar!</a>
         </div>
     </div>
