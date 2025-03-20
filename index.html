@@ -9,21 +9,23 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
             background-color: #f8f8f8;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             padding: 20px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         h1 {
             color: #d63384;
+            font-size: 28px;
         }
         h2 {
             color: #333;
+            font-size: 24px;
         }
         p {
             color: #666;
@@ -33,23 +35,24 @@
             display: inline-block;
             background-color: #d63384;
             color: #fff;
-            padding: 15px 20px;
+            padding: 15px 25px;
+            font-size: 22px;
             text-decoration: none;
-            font-size: 20px;
+            font-weight: bold;
             border-radius: 5px;
-            margin-top: 20px;
+            margin: 20px 0;
         }
         .cta-button:hover {
             background-color: #b82e6b;
         }
         .section {
-            margin: 40px 0;
+            margin: 50px 0;
+            padding: 20px;
         }
-        .testimonials img, .ugcs img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 5px;
-            margin-top: 10px;
+        .highlight {
+            background: #ffe5ec;
+            padding: 20px;
+            border-radius: 10px;
         }
         .video-container {
             position: relative;
@@ -66,64 +69,55 @@
             width: 100%;
             height: 100%;
         }
-        .price {
-            background: #ffe5ec;
-            padding: 30px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
         .price-box {
             background: #fff;
-            padding: 15px;
+            padding: 20px;
             border-radius: 10px;
-            display: inline-block;
             margin-top: 10px;
+            display: inline-block;
         }
         .old-price {
             text-decoration: line-through;
             color: red;
-            font-size: 18px;
+            font-size: 20px;
         }
         .new-price {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
             color: #d63384;
         }
         .installments {
-            font-size: 16px;
+            font-size: 18px;
             color: #333;
-        }
-        .benefits {
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
         }
         .benefit-item {
             display: flex;
             align-items: center;
-            margin-bottom: 15px;
+            text-align: left;
+            margin: 10px 0;
         }
         .benefit-item img {
             width: 50px;
-            margin-right: 10px;
+            margin-right: 15px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Transforme seu rosto com a maquiagem certa! 💄✨</h1>
-        <p>Aprenda a se maquiar de forma simples e prática, mesmo que nunca tenha pegado em um pincel antes!</p>
+        <!-- Título e Chamada Principal -->
+        <h1>Descubra Como Se Maquiar de Forma Simples e Profissional 💄✨</h1>
+        <p>Aprenda técnicas incríveis para se maquiar sozinha, sem depender de salão!</p>
 
-        <!-- VÍDEO DE UGC -->
+        <!-- VÍDEO PRINCIPAL -->
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/SEU_VIDEO_UGC_AQUI" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/SEU_VIDEO_AQUI" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <!-- SEÇÃO DE PREÇO -->
-        <div class="section price">
-            <h2>Quanto custa para aprender a se maquiar de forma impecável?</h2>
-            <p>Você poderia gastar <strong>R$250,00</strong> em um único dia no salão...<br>Ou até <strong>R$500,00</strong> em um curso presencial...</p>
+        <div class="section highlight">
+            <h2>Quanto vale aprender a se maquiar sozinha?</h2>
+            <p>Você poderia gastar <strong>R$250,00</strong> em um único dia no salão... Ou até <strong>R$500,00</strong> em um curso presencial!</p>
             <p><strong>Mas hoje você pode aprender tudo isso por um valor muito menor!</strong></p>
 
             <div class="price-box">
@@ -133,61 +127,60 @@
             </div>
 
             <p>💳 Aceitamos PIX, Boleto e Cartão de Crédito!</p>
-
             <a href="#cadastro" class="cta-button">Quero garantir meu acesso agora!</a>
-
-            <p class="guarantee">🛡️ Garantia de 7 dias: Se não gostar, devolvemos seu dinheiro!</p>
+            <p>🛡️ <strong>Garantia de 7 dias:</strong> Se não gostar, devolvemos seu dinheiro!</p>
         </div>
 
-        <div class="section benefits">
+        <!-- BENEFÍCIOS -->
+        <div class="section">
             <h2>📌 Por que esse curso é perfeito para você?</h2>
 
             <div class="benefit-item">
                 <img src="img/icon-facil.png" alt="Ícone de facilidade">
-                <h3>Fácil de Aprender</h3>
-                <p>Aulas simples e diretas, feitas para quem nunca se maquiou antes.</p>
+                <p><strong>Fácil de Aprender:</strong> Aulas simples para quem nunca se maquiou antes.</p>
             </div>
 
             <div class="benefit-item">
                 <img src="img/icon-online.png" alt="Ícone online">
-                <h3>100% Online</h3>
-                <p>Estude no seu tempo e de onde quiser. Você tem acesso vitalício!</p>
+                <p><strong>100% Online:</strong> Assista de onde quiser, no seu ritmo.</p>
             </div>
 
             <div class="benefit-item">
                 <img src="img/icon-profissional.png" alt="Ícone maquiagem profissional">
-                <h3>Resultado Profissional</h3>
-                <p>Aprenda técnicas que vão deixar sua make impecável, sem gastar com salão!</p>
+                <p><strong>Resultado Profissional:</strong> Aprenda a fazer makes incríveis sem gastar com salão!</p>
             </div>
 
             <a href="#cadastro" class="cta-button">Quero aprender agora!</a>
         </div>
 
+        <!-- PROVA SOCIAL -->
+        <div class="section highlight">
+            <h2>💬 O que nossas alunas estão dizendo?</h2>
+            <p>"Eu nunca soube me maquiar, mas esse curso mudou tudo! Hoje faço makes lindas sozinha!" – Ana Souza</p>
+            <p>"Valeu cada centavo! Curso maravilhoso e muito prático!" – Juliana Lima</p>
+        </div>
+
+        <!-- TRANSFORMAÇÕES -->
         <div class="section">
-            <h2>Veja como funciona o curso!</h2>
+            <h2>Veja as transformações das nossas alunas! ✨</h2>
+            <img src="img/antesdepois1.jpg" alt="Antes e depois 1" width="100%">
+            <img src="img/antesdepois2.jpg" alt="Antes e depois 2" width="100%">
+        </div>
+
+        <!-- VÍDEO UGC -->
+        <div class="section">
+            <h2>Veja o depoimento de quem já fez o curso! 🎥</h2>
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/SEU_VIDEO_CURSO_AQUI" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/SEU_VIDEO_UGC_AQUI" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
 
-        <div class="section testimonials">
-            <h2>O que nossas alunas estão dizendo! 💬</h2>
-            <p>"Eu nunca soube me maquiar, mas esse curso mudou tudo! Hoje faço makes lindas sozinha!" – Ana Souza</p>
-            <p>"Parece que eu saí do salão! Amei as técnicas, são muito fáceis!" – Camila Ferreira</p>
-            <img src="img/depoimento1.jpg" alt="Depoimento de cliente">
-            <img src="img/depoimento2.jpg" alt="Antes e depois">
+        <!-- BOTÃO FINAL -->
+        <div class="section highlight">
+            <h2>🔥 Não perca essa oportunidade! 🔥</h2>
+            <a href="#cadastro" class="cta-button">Quero me inscrever agora!</a>
         </div>
 
-        <div class="section ugcs">
-            <h2>Transformações das nossas alunas! ✨</h2>
-            <img src="img/antesdepois1.jpg" alt="Antes e depois 1">
-            <img src="img/antesdepois2.jpg" alt="Antes e depois 2">
-        </div>
-
-        <div class="section">
-            <h2>Garanta sua vaga agora mesmo!</h2>
-            <a href="#cadastro" class="cta-button">Sim, eu quero me transformar!</a>
-        </div>
     </div>
 
 </body>
